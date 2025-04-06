@@ -33,5 +33,6 @@ function processFile(file) {
     })
     .catch(error => {
         console.error('Error:', error); 
+        document.getElementById('loopResult').innerText = 'Error during loop detection.';
     });
 }
